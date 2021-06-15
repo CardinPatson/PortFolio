@@ -1,0 +1,14 @@
+@use "../custom";
+
+//TOUCHER LE BOUTON
+
+@keyframes move-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.1;
+  }
+}

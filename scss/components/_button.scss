@@ -1,0 +1,41 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.btn-rounded {
+  //POUR INCLURE LES MEDIAS QUERIES AVEC BOOTSTRAP
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  position: relative;
+  margin: 0;
+  font-weight: 300;
+  border: 0.1rem solid rgba($white, 0.6);
+  padding: 0.3rem 3rem 0.3rem 1rem;
+  background-color: $white;
+  font-family: $Poppins;
+
+  span {
+    position: absolute;
+    background-color: $primary;
+    //padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    i {
+      font-size: 1rem;
+      line-height: 2rem; //doit etre la meme que width et height sinon sera decalé
+    }
+  }
+  &:hover {
+    transition-duration: 167ms;
+    @include gradiant;
+    color: $white;
+
+    span {
+      background-color: rgba($secondary, 0.6);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use '../custom' as *;
+
+.menu {
+  font-family: $Roboto;
+}
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: normal;
+  font-family: $Poppins;
+
+  .intro {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.3;
+    color: $white;
+    font-family: $Poppins;
+  }
+  &--description {
+    font-size: 1rem;
+    display: block;
+    color: $white;
+    margin-top: 1.2rem;
+    text-transform: none;
+
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: $secondary;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: $secondary;
+}
+.display-3 {
+  font-family: $Poppins;
+  &--title {
+    border: solid red 1px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+// BORDER RIGHT
+
+.border-right {
+  border-right: 0.1rem solid $gray-300;
+  height: 100%;
+}

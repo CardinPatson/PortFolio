@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- START THE NAVBAR SECTION -->
+
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-dark
+        bg-primary
+        menu
+        shadow
+        fixed-top
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/patson_lu4.jpg" alt="patson"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Profil <i class="fab fa-github"></i
+            ></a>
+            <a class="nav-link" href="#"
+              >Projets <i class="fas fa-palette"></i
+            ></a>
+            <a class="nav-link" href="#"
+              >Formation<i class="fas fa-user-graduate"></i
+            ></a>
+            <a class="nav-link" href="#">Contact </a>
+            <button type="button" class="rounded-pill btn-rounded">
+              +32 465726242 <span><i class="fas fa-phone-alt"></i></span>
+            </button>
+            <!-- <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- START THE INTRODUCTION SECTION  -->
+
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display2 intro">Hey, ici Patson</span>
+              <span class="display-2--description lh-base"
+                >Un passioné du developpement
+              </span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Decouvre moi <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+          <!-- CONTENT ILLUSTRATION  -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img
+                src="img/arts/Javascript_Flatline.png"
+                alt="Javascript Coding"
+                class="img-fluid"
+              />
+              <a href="#" class="glightbox">
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-1"></span>
+                <span class="border-animation border-2"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,160L40,176C80,192,160,224,240,202.7C320,181,400,107,480,96C560,85,640,139,720,176C800,213,880,235,960,229.3C1040,224,1120,192,1200,176C1280,160,1360,160,1400,160L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- UTILISATION DE GLIGHT BOX POUR LINSERTION DE LA VIDEO DANS LIMAGE / SE SITUE DANS LE VENDOR LA BIBLIOTHEQUE A ETE TELECHARGER SUR LE SITE https://biati-digital.github.io/glightbox/ -->
+    <!-- TELECHARGER LE MODULE DE GLIGHT BOX SUR NPM -->
+
+    <!-- PARTIE PROJET -->
+
+    <section id="projets" class="projets">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Mes Projets</h1>
+          <div class="heading-line mb-1"></div>
+          <!-- mb-1 est la distance entre le lelement et le contenu en bas-->
+        </div>
+        <!-- </div>
+
+      <div class="container"> -->
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <!-- mt la distance en lelt et celui du dessus  -->
+          <div class="col-md-6 border-right">
+            <div class="bd-white p-3">
+              <h2 class="fw-bold text-center lh-1.5">
+                Linkedin-clone Fury application Covid Application
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4 text-start">
+              <p class="fw-light lh-1.7">
+                Un clone de l'application mobile disponible sur github, Une site
+                web responsive d'annonce en passant par une interface de gestion
+                des malades du covid sont les grandes lignes que nous aborderons
+                plus en détail dans la suite
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENU DES PROJETS -->
+      <div class="container">
+        <!-- LINKEDIN CLONE -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__content">
+              <img src="img/linkedin.png" class="img-fluid" alt="" />
+              <h3 class="display-3--title mt-1">Linkedin-clone</h3>
+              <p class="lh-lg">React-Redux-Firebase</p>
+              <p class="lh-lg">
+                Grâce à ces technologies qui nous offre une grande flexibilité
+                dans la construction da notre application, les modules suivants
+                ont été mis en avant <br />
+                Style-component qui nous à servi dans la construction de notre
+                style , Firebase qui nous a permis d'implémenter les
+                fonctionanlités de connexion et la gestion des données, Redux
+                qui grâce à son systeme de store......
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded bg-primary text-white"
+              >
+                Voir plus <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__pic">
+              <img
+                src="img/arts/Mobile Phone_Isometric.png"
+                alt="Javascript Coding"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- FURY APPLICATION -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__pic">
+              <img
+                src="img/arts/Coding _linkedin.png"
+                alt="Javascript Coding"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__content">
+              <div class="icons d-block fas fa-code"></div>
+              <h3 class="display-3--title mt-1">Application Fury</h3>
+              <p class="lh-lg">React-Redux-Firebase Scss</p>
+              <p class="lh-lg">
+                Grâce à ces technologies qui nous offre une grande flexibilité
+                dans la construction da notre application, les modules suivants
+                ont été mis en avant <br />
+                Style-component qui nous à servi dans la construction de notre
+                style , Firebase qui nous a permis d'implémenter les
+                fonctionanlités de connexion et la gestion des données, Redux
+                qui grâce à son systeme de store......
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded bg-primary text-white"
+              >
+                Voir plus <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- APPLICATION DE GESTION DES MALADES COVID -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__content">
+              <div class="icons d-block fas fa-database"></div>
+              <h3 class="display-3--title mt-1">Interface de gestion</h3>
+              <p class="lh-lg">Javascript-SQL</p>
+              <p class="lh-lg">
+                Grâce à ces technologies qui nous offre une grande flexibilité
+                dans la construction da notre application, les modules suivants
+                ont été mis en avant <br />
+                Style-component qui nous à servi dans la construction de notre
+                style , Firebase qui nous a permis d'implémenter les
+                fonctionanlités de connexion et la gestion des données, Redux
+                qui grâce à son systeme de store......
+              </p>
+              <button
+                type="button"
+                class="rounded-pill btn-rounded bg-primary text-white"
+              >
+                Voir plus <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+            <div class="projets__pic">
+              <img
+                src="img/arts/Data processing _Monochromatic.png"
+                alt="Javascript Coding"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PARTIE FORMATION -->
+    <!-- LA BALISE <code></code> POUR COLORER LES MORCEAUX DE CODE -->
+
+    <section class="formation" id="formation">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Formation</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                2018-2019
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                2019-2020
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                2020-2021
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({
+        href: "https://www.youtube.com/watch?v=Ga6RYejo6Hk",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoplayVideos: true,
+      });
+      //REPRESENTE LES PARAMETRES DAFFICHAGE DE NOTRE VIDEO
+    </script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,60 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  @include gradiant; //PROVIENT DU MIXIN QUI EST LE GRADIANT
+  i {
+    color: white;
+  }
+
+  .container-fluid {
+    .first {
+      i {
+        font-size: large;
+      }
+    }
+    .navbar-brand {
+      margin-left: 25px;
+    }
+    a {
+      img {
+        cursor: pointer;
+        border-radius: 50%;
+        max-width: 60px;
+        height: auto;
+        margin: auto;
+      }
+      img:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s ease;
+      }
+    }
+
+    #navbarNavAltMarkup {
+      .navbar-nav {
+        @include media-breakpoint-down(sm) {
+          margin-top: 20px;
+          margin-left: 0;
+        }
+        margin: auto 16px;
+
+        a:hover {
+          color: $gray-300;
+        }
+        a {
+          color: $white;
+          display: inline-block;
+          font-weight: 100;
+          margin-left: 25px;
+          //text-transform: capitalize;
+          i {
+            margin-left: 5px;
+          }
+          &:last-child{
+            margin-right : 12px;
+          }
+        }
+      }
+    }
+  }
+}

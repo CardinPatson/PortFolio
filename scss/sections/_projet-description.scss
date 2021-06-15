@@ -1,0 +1,26 @@
+@use "../custom" as *;
+
+.projets {
+  position: relative; // Permet de controller tout le corps
+  padding: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg){
+      margin-top: 5rem;
+    }
+    .icons {
+      font-size: 2rem;
+      color: $primary;
+
+      @include media-breakpoint-up(lg){
+        margin-top: 2.5rem;
+      }
+    }
+    &__pic {
+      max-width: 100%;
+    }
+  }
+}
