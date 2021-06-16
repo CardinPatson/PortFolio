@@ -8,19 +8,41 @@
     padding: 1rem;
     margin-top: 0;
 
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
       margin-top: 5rem;
     }
     .icons {
       font-size: 2rem;
       color: $primary;
 
-      @include media-breakpoint-up(lg){
+      @include media-breakpoint-up(lg) {
         margin-top: 2.5rem;
       }
     }
     &__pic {
       max-width: 100%;
     }
+  }
+  .icon-description-projet {
+    font-size: 1.3rem;
+    padding: 3px;
+  }
+  .fa-js {
+    color: #f0ed63;
+  }
+  .fa-react {
+    color: #c3dcf5;
+  }
+  .fa-html5 {
+    color: #bb3535;
+  }
+  .fa-database {
+    color: #0a66c2;
+  }
+  .fa-fire {
+    color: #f7c94d;
+  }
+  .fa-sass {
+    color: #f83d9a;
   }
 }

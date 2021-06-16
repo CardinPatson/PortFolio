@@ -7,6 +7,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --bs-blue: #6610f2;
   --bs-indigo: #4ca4f0;
@@ -10851,6 +10852,14 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+#formation {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact {
+  font-family: "Montserrat", sans-serif;
+}
+
 .menu-image-animation {
   animation-name: image-nav-animation;
   animation-duration: 0.5s;
@@ -10977,9 +10986,123 @@ textarea.form-control-lg {
 .projets__content__pic {
   max-width: 100%;
 }
+.projets .icon-description-projet {
+  font-size: 1.3rem;
+  padding: 3px;
+}
+.projets .fa-js {
+  color: #f0ed63;
+}
+.projets .fa-react {
+  color: #c3dcf5;
+}
+.projets .fa-html5 {
+  color: #bb3535;
+}
+.projets .fa-database {
+  color: #0a66c2;
+}
+.projets .fa-fire {
+  color: #f7c94d;
+}
+.projets .fa-sass {
+  color: #f83d9a;
+}
 
 #formation {
   padding: 5rem 0;
+}
+#formation .description-formation .title-formation {
+  border-bottom: solid #6610f2 2px;
+  color: #6610f2;
+}
+#formation .description-formation p {
+  padding: 15px;
+}
+#formation .description-formation p a {
+  text-decoration: none;
+  color: #6610f2;
+}
+#formation .description-experience .barre {
+  border: solid rgba(0, 0, 0, 0.1) 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2.4rem;
+  height: 16px;
+  width: 100%;
+}
+#formation .description-experience .barre #barre-javascript {
+  background-color: #4ca4f0;
+  width: 80%;
+}
+#formation .description-experience .barre #barre-react {
+  background-color: #4ca4f0;
+  width: 50%;
+}
+#formation .description-experience .barre #barre-sql {
+  background-color: #4ca4f0;
+  width: 60%;
+}
+#formation .description-experience p {
+  padding: 15px;
+}
+#formation .description-experience p i {
+  font-size: 1.2rem;
+}
+#formation .description-experience p i.fa-bootstrap {
+  color: #0a66c2;
+}
+#formation .description-experience p i.fa-sass {
+  color: #f83d9a;
+}
+
+#contact {
+  padding-top: 1.5em;
+}
+#contact a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+#contact a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+#contact .contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+#contact .contact-icon .icon-button {
+  border-radius: 2.6rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  position: relative;
+  width: 2.6rem;
+  transition: 0.2s ease-in;
+  display: inline-block;
+  cursor: pointer;
+}
+#contact .contact-icon .linkedin,
+#contact .contact-icon .twitter {
+  color: #0a66c2;
+}
+#contact .contact-icon .linkedin:hover,
+#contact .contact-icon .twitter:hover {
+  transform: scale(1.2);
+}
+#contact .contact-icon .google {
+  color: #ea4335;
+}
+#contact .contact-icon .google:hover {
+  transform: scale(1.2);
+}
+#contact .contact-icon .github {
+  color: rgba(0, 0, 0, 0.9);
+}
+#contact .contact-icon .github:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
