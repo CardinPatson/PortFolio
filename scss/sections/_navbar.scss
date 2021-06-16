@@ -1,6 +1,19 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
+@use "../components/animation" as *;
 
+.menu-image-animation {
+  animation-name: image-nav-animation;
+  animation-duration: 0.5s;
+}
+.nav-animation-visible {
+  transition: all 0.2s ease-in-out 0.1s;
+  transform: translate3d(0px, -100%, 0px);
+}
+.nav-animation-none {
+  transition: all 0.2s ease-in-out 0.1s;
+  transform: translate3d(0px, 0px, 0px);
+}
 .menu {
   @include gradiant; //PROVIENT DU MIXIN QUI EST LE GRADIANT
   i {
@@ -50,8 +63,8 @@
           i {
             margin-left: 5px;
           }
-          &:last-child{
-            margin-right : 12px;
+          &:last-child {
+            margin-right: 12px;
           }
         }
       }

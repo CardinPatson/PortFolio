@@ -52,8 +52,8 @@
 .display-3 {
   font-family: $Poppins;
   &--title {
-    border: solid red 1px;
-    font-size: 1.2rem;
+    // border: solid red 1px;
+    font-size: 1.6rem;
     text-transform: capitalize;
     font-weight: 600;
     display: inline-block;
@@ -62,8 +62,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @include media-breakpoint-up(lg) {
-      margin-top: 1.8rem;
+    @include media-breakpoint-up(sm) {
+      // border: solid red 1px;
+     // margin-top: 1rem;
     }
   }
 }

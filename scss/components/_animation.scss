@@ -12,3 +12,9 @@
     opacity: 0.1;
   }
 }
+
+@keyframes image-nav-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
