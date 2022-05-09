@@ -18,7 +18,7 @@ jobs:
 #    - name: Run build task
 #      run: npm run build --if-present
     - name: Deploy to Server
-      uses: easingthemes/ssh-deploy@master
+      uses: easingthemes/ssh-deploy@main
       env: 
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete"
