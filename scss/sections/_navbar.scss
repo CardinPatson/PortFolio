@@ -3,71 +3,75 @@
 @use "../components/animation" as *;
 
 .menu-image-animation {
-  animation-name: image-nav-animation;
-  animation-duration: 0.5s;
+	animation-name: image-nav-animation;
+	animation-duration: 0.5s;
 }
 .nav-animation-visible {
-  transition: all 0.2s ease-in-out 0.1s;
-  transform: translate3d(0px, -100%, 0px);
+	transition: all 0.2s ease-in-out 0.1s;
+	transform: translate3d(0px, -100%, 0px);
 }
 .nav-animation-none {
-  transition: all 0.2s ease-in-out 0.1s;
-  transform: translate3d(0px, 0px, 0px);
+	transition: all 0.2s ease-in-out 0.1s;
+	transform: translate3d(0px, 0px, 0px);
 }
 .menu {
-  @include gradiant; //PROVIENT DU MIXIN QUI EST LE GRADIANT
-  i {
-    color: white;
-  }
+	@include gradiant; //PROVIENT DU MIXIN QUI EST LE GRADIANT
+	i {
+		color: white;
+	}
 
-  .container-fluid {
-    .first {
-      i {
-        font-size: large;
-      }
-    }
-    .navbar-brand {
-      margin-left: 25px;
-    }
-    a {
-      img {
-        cursor: pointer;
-        border-radius: 50%;
-        max-width: 60px;
-        height: auto;
-        margin: auto;
-      }
-      img:hover {
-        transform: scale(1.1);
-        transition: transform 0.1s ease;
-      }
-    }
+	.container-fluid {
+		// border: solid red 1px;
+		.first {
+			i {
+				font-size: large;
+			}
+		}
+		.navbar-brand {
+			margin-left: 25px;
+		}
+		a {
+			img {
+				cursor: pointer;
+				border-radius: 50%;
+				max-width: 60px;
+				height: auto;
+				margin: auto;
+			}
+			img:hover {
+				transform: scale(1.1);
+				transition: transform 0.1s ease;
+			}
+		}
 
-    #navbarNavAltMarkup {
-      .navbar-nav {
-        @include media-breakpoint-down(sm) {
-          margin-top: 20px;
-          margin-left: 0;
-        }
-        margin: auto 16px;
+		#navbarNavAltMarkup {
+			.navbar-nav {
+				// border: solid red 1px;
+				font-family: Virgil;
+				font-size: 18px;
+				@include media-breakpoint-down(sm) {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+				margin: auto 16px;
 
-        a:hover {
-          color: $gray-300;
-        }
-        a {
-          color: $white;
-          display: inline-block;
-          font-weight: 100;
-          margin-left: 25px;
-          //text-transform: capitalize;
-          i {
-            margin-left: 5px;
-          }
-          &:last-child {
-            margin-right: 12px;
-          }
-        }
-      }
-    }
-  }
+				a:hover {
+					color: $gray-300;
+				}
+				a {
+					color: $white;
+					display: inline-block;
+					font-weight: 100;
+					margin-left: 25px;
+					//text-transform: capitalize;
+					i {
+						margin-left: 5px;
+					}
+					&:last-child {
+						margin-right: 12px;
+					}
+				}
+			}
+		}
+	}
 }

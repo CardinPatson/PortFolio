@@ -1,51 +1,53 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
 #formation {
-  padding: 5rem 0;
-  .description-formation {
-    .title-formation {
-      border-bottom: solid $primary 2px;
-      color: $primary;
-    }
-    p {
-      padding: 15px;
-      a {
-        text-decoration: none;
-        color: $primary;
-      }
-    }
-  }
-  .description-experience {
-    .barre {
-      border: solid rgba(0, 0, 0, 0.1) 1px;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 2.4rem;
-      height: 16px;
-      width: 100%;
-      #barre-javascript {
-        background-color: $secondary;
-        width: 80%;
-      }
-      #barre-react {
-        background-color: $secondary;
-        width: 50%;
-      }
-      #barre-sql {
-        background-color: $secondary;
-        width: 60%;
-      }
-    }
-    p {
-      padding: 15px;
-      i {
-        font-size: 1.2rem;
-        &.fa-bootstrap {
-          color: #0a66c2;
-        }
-        &.fa-sass {
-          color: #f83d9a;
-        }
-      }
-    }
-  }
+	padding: 5rem 0;
+	// border: solid blue 1px;
+  font-family: Assistant, sans-serif;
+	.description-formation {
+		.title-formation {
+			border-bottom: solid $primary 2px;
+			color: $primary;
+		}
+		p {
+			padding: 15px;
+			a {
+				text-decoration: none;
+				color: $primary;
+			}
+		}
+	}
+	.description-experience {
+		.barre {
+			border: solid rgba(0, 0, 0, 0.1) 1px;
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 2.4rem;
+			height: 16px;
+			width: 100%;
+			#barre-javascript {
+				background-color: $secondary;
+				width: 80%;
+			}
+			#barre-react {
+				background-color: $secondary;
+				width: 50%;
+			}
+			#barre-sql {
+				background-color: $secondary;
+				width: 60%;
+			}
+		}
+		p {
+			padding: 15px;
+			i {
+				font-size: 1.2rem;
+				&.fa-bootstrap {
+					color: #0a66c2;
+				}
+				&.fa-sass {
+					color: #f83d9a;
+				}
+			}
+		}
+	}
 }

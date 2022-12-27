@@ -1,16 +1,17 @@
-@use 'custom';
+@use "custom";
 
 //IMPORT COMPONENTS
-@use 'components/animation';
-@use 'components/button';
-@use 'components/mixins.scss';
-@use 'components/typography';
+@use "components/animation";
+@use "components/button";
+@use "components/mixins.scss";
+@use "components/typography";
 
 //IMPORT SECTION
-@use 'sections/navbar';
-@use 'sections/intro-section';
-@use 'sections/projet-name';
-@use 'sections/projet-description';
-@use 'sections/latest-work';
-@use 'sections/formation';
-@use 'sections/footer';
+@use "sections/navbar";
+@use "sections/intro-section";
+@use "sections/projet-name";
+@use "sections/projet-description";
+@use "sections/latest-work";
+@use "sections/formation";
+@use "sections/footer";
+@use "sections/apprentissage";
