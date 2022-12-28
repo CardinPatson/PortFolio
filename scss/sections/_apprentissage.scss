@@ -58,6 +58,7 @@
 			align-items: center;
 			cursor: pointer;
 			&:hover {
+				transition: all 0.3s ease-in;
 				background-color: rgba($color: #4ca4f0, $alpha: 0.5);
 				border-color: #4ca4f0;
 			}

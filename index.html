@@ -12,6 +12,17 @@
 		<link rel="stylesheet" href="assets/css/flickity.min.css" />
 		<script src="assets/js/flickity.pkgd.min.js"></script>
 		<title>Portfolio</title>
+		<script>
+			window.addEventListener("load", () => {
+				// Enlever tous les accordions non necessaire
+				const accordionShow =
+					document.getElementsByClassName("remove__show");
+				for (let i = 0; i < accordionShow.length; i++) {
+					console.log(accordionShow);
+					accordionShow[i].classList.remove("show");
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<!-- START THE NAVBAR SECTION -->
@@ -88,7 +99,7 @@
 						<h1 class="display-2">
 							<span class="display2 intro">Hey, ici Patson</span>
 							<span class="display-2--description lh-base"
-								>Un passioné du developpement
+								>Et je suis passioné par le developpement logiciel
 							</span>
 						</h1>
 						<button type="button" class="rounded-pill btn-rounded">
@@ -131,56 +142,47 @@
 		<section id="projets" class="projets">
 			<div class="container">
 				<div class="row text-center">
-					<h1 class="display-3 fw-bold">Projets Personnels</h1>
+					<h1 class="display-4 fw-bold">Projets Personnels et contribution</h1>
 					<div class="heading-line mb-1"></div>
 					<!-- mb-1 est la distance entre le lelement et le contenu en bas-->
 				</div>
 				<!-- </div>
 
       <div class="container"> -->
-				<div class="row pt-2 pb-2 mt-0 mb-3">
+				<div id="carouselExampleIndicators" class="row pt-2 pb-2 mt-4 mb-3">
 					<!-- mt la distance en lelt et celui du dessus  -->
-					<div class="col-md-6 border-right project__title">
+						
+					<div id="carouselExampleIndicators" class="col-md-6 border-right project__title carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						</ol>
 						<div
-							class="bd-white p-3 carousel carousel-main"
-							data-flickity='{ "autoPlay": 1500 }'
+							class="bd-white p-4 carousel carousel-main carousel-inner"
+							data-flickity='{ "autoPlay": 2000 }'
 						>
-							<div class="mySlides__project">
-								<h2>Fury</h2>
-								<!-- <img
-										src="img_nature_wide.jpg"
-										style="width: 100%"
-									/> -->
+							<div class="carousel-inner">
+									<div class="carousel-item active bg-white text-dark text-center">
+										<h2>De Taaltoolbox</h2>
+									</div>
 							</div>
 
-							<div class="mySlides__project">
-								<h2>Car Location</h2>
-								<!-- <img
-										src="img_snow_wide.jpg"
-										style="width: 100%"
-									/> -->
+							<div class="carousel-inner">
+								<div class="carousel-item active bg-white text-dark text-center">
+									<h2>Car Rental</h2>
+								</div>
 							</div>
-
-							<div class="mySlides__project">
-								<h2>Linkedin clone</h2>
-								<!-- <img
-										src="img_mountains_wide.jpg"
-										style="width: 100%"
-									/> -->
+							<div class="carousel-inner">
+								<div class="carousel-item active bg-white text-dark text-center">
+									<h2>Linkedin clone</h2>
+								</div>
 							</div>
-							<div class="mySlides__project">
-								<h2>Linkedin clone</h2>
-								<!-- <img
-										src="img_mountains_wide.jpg"
-										style="width: 100%"
-									/> -->
-							</div>
-							<div class="mySlides_project">
-								<h2>clone</h2>
-								<!-- <img
-										src="img_mountains_wide.jpg"
-										style="width: 100%"
-									/>  -->
+							<div class="carousel-inner">
+								<div class="carousel-item active bg-white text-dark text-center">
+									<h2>Chatbot</h2>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -189,21 +191,20 @@
 					<div class="col-md-6">
 						<div class="bg-white p-4 text-start">
 							<ul>
-								<b>ChatBot</b>
-								Un clone de l'application mobile disponible sur
-								github,
+								<b>De Taaltoolbox</b>
+								Application web d'apprentissage du neerlandais.
+								
 							</ul>
 							<ul>
 								<b>Car Rental</b>
-								Une site web responsive d'annonce
+								Application web de location de voiture disponible
 							</ul>
 							<ul>
-								<b>TaaToolBox</b>
-								interface de gestion des malades du covid sont
-								quelques projets qui seront détaillé ici.
+								<b>Linkedin Clone</b>
+								Un clone de l'application web linkedin disponible <a href="https://github.com/CardinPatson/Car_Location" target="_blank">ici</a> ,
 							</ul>
 							<ul>
-								<b>TaaToolBox</b>
+								<b>Chatbot</b>
 								interface de gestion des malades du covid sont
 								quelques projets qui seront détaillé ici.
 							</ul>
@@ -214,11 +215,86 @@
 
 			<!-- CONTENU DES PROJETS -->
 			<div class="container">
-				<!-- LINKEDIN CLONE -->
+				<!-- DE TAALTOOLBOX APP -->
 				<div
 					class="slideshow-container-project gallery js-flickity"
 					data-flickity-options='{ "wrapAround": true }'
 				>
+					<div class="gallery-cell row projets__content__image mySlides-project fade-project">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+							<div class="projets__content">
+								<div class="icons d-block fab fa-angular"></div>
+								<h3 class="display-3--title mt-1">
+									De Taaltoolbox App
+								</h3>
+								<p class="lh-lg">
+									<!-- <i class="fab fa-angular icon-description-projet"></i> -->
+									<i class="fab fa-node icon-description-projet"></i>
+									<i class="fas fa-database icon-description-projet"></i>
+								</p>
+								<p class="lh-lg">
+									Projet proposé par la région Bruxelle capital à mon école et effectué dans le cadre de mon travail de fin d'étude. Contribution sur :
+									<br>
+									-  Créateur d'activité : permettre la création d'un arbre d'activité
+									<br>
+									-  Créateur d'avatar : Intégration d'un module permettant au utilisateur de personnalise leur avatar 
+								</p>
+								<a href="https://www.detaaltoolbox.be" target="_blank">
+									<button type="button" class="rounded-pill btn-rounded bg-primary text-white"
+										style="transition: all 0.3s ease-out">
+										Voir plus
+										<span><i class="fas fa-arrow-right"></i></span>
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+							<div class="projets__pic">
+								<img src="img/arts/Data processing _Monochromatic.png" alt="Javascript Coding" class="img-fluid" />
+							</div>
+						</div>
+					</div>
+
+					<div class="gallery-cell row projets__content__image mySlides-project fade-project">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+							<div class="projets__pic">
+								<img src="img/arts/Coding _linkedin.png" alt="Javascript Coding" class="img-fluid" />
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4">
+							<div class="projets__content">
+								<div class="icons d-block fas fa-code"></div>
+								<h3 class="display-3--title mt-1">
+									Car Rental
+								</h3>
+					
+								<p class="lh-lg">
+									<i class="fab fa-js icon-description-projet"></i>
+									<i class="fab fa-react icon-description-projet"></i>
+									<i class="fas fa-fire icon-description-projet"></i>
+									<i class="fas fa-database icon-description-projet"></i>
+								</p>
+					
+								<p class="lh-lg">
+									Ce projet consistait à la mise en place d'une application qui permet à une personne de mettre en location des
+									voitures qu'il a à sa disposition.
+									Stack utilisé :
+									<br>
+									- React Redux
+									<br>
+									- NodeJS Express
+									<br>
+									- Postgresql
+								</p>
+								<a href="https://github.com/CardinPatson/Car_Location" target="_blank">
+									<button type="button" class="rounded-pill btn-rounded bg-primary text-white">
+										Voir plus
+										<span><i class="fas fa-arrow-right"></i></span>
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
 					<div
 						class="gallery-cell row projets__content__image mySlides-project fade-project mySlides-project fade-project"
 					>
@@ -294,131 +370,10 @@
 					</div>
 
 					<!-- FURY APPLICATION -->
-					<div
-						class="gallery-cell row projets__content__image mySlides-project fade-project"
-					>
-						<div
-							class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4"
-						>
-							<div class="projets__pic">
-								<img
-									src="img/arts/Coding _linkedin.png"
-									alt="Javascript Coding"
-									class="img-fluid"
-								/>
-							</div>
-						</div>
-						<div
-							class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4"
-						>
-							<div class="projets__content">
-								<div class="icons d-block fas fa-code"></div>
-								<h3 class="display-3--title mt-1">
-									Application Fury
-								</h3>
 
-								<p class="lh-lg">
-									<i
-										class="fab fa-js icon-description-projet"
-									></i>
-									<i
-										class="fab fa-react icon-description-projet"
-									></i>
-									<i
-										class="fas fa-fire icon-description-projet"
-									></i>
-									<i
-										class="fas fa-database icon-description-projet"
-									></i>
-								</p>
-
-								<p class="lh-lg">
-									En cours d'éxécution , Ce projet consiste a
-									implementer une structure d'application
-									d'annonce sur base des technologies react ,
-									redux firebase. Ce projet achevé sera un
-									excellent complément dans la consolidation
-									de mes acquis sur la combinaison react-redux
-								</p>
-								<a
-									href="https://github.com/CardinPatson"
-									target="_blank"
-								>
-									<button
-										type="button"
-										class="rounded-pill btn-rounded bg-primary text-white"
-									>
-										Voir plus
-										<span
-											><i class="fas fa-arrow-right"></i
-										></span>
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
 
 					<!-- APPLICATION DE GESTION DES MALADES COVID -->
-					<div
-						class="gallery-cell row projets__content__image mySlides-project fade-project"
-					>
-						<div
-							class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4"
-						>
-							<div class="projets__content">
-								<div
-									class="icons d-block fas fa-database"
-								></div>
-								<h3 class="display-3--title mt-1">
-									Interface de gestion
-								</h3>
-								<p class="lh-lg">
-									<i
-										class="fab fa-html5 icon-description-projet"
-									></i>
-									<i
-										class="fab fa-js icon-description-projet"
-									></i>
-									<i
-										class="fas fa-database icon-description-projet"
-									></i>
-								</p>
-								<p class="lh-lg">
-									Ce projet implique la gestion des données
-									personnelles, Un système de gestion de base
-									de données relationnelles à été implémenter
-									dès le départ, ensuite est venu la
-									réalisation des users stories avec du
-									Javascript
-								</p>
-								<a
-									href="https://github.com/CardinPatson/projetCovid"
-								>
-									<button
-										type="button"
-										class="rounded-pill btn-rounded bg-primary text-white"
-										style="transition: all 0.3s ease-out"
-									>
-										Voir plus
-										<span
-											><i class="fas fa-arrow-right"></i
-										></span>
-									</button>
-								</a>
-							</div>
-						</div>
-						<div
-							class="col-lg-6 col-md-6 col-sm-12 col-xs-12 projet mt-4"
-						>
-							<div class="projets__pic">
-								<img
-									src="img/arts/Data processing _Monochromatic.png"
-									alt="Javascript Coding"
-									class="img-fluid"
-								/>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -556,8 +511,8 @@
 						</h2>
 						<div
 							id="apprentissageTwo"
-							class="accordion-collapse collapse show gallery js-flickity"
-							aria-labelledby="acquisOne"
+							class="accordion-collapse collapse show gallery js-flickity remove__show"
+							aria-labelledby="acquisTwo"
 							data-bs-parent="#accordionExample"
 							data-flickity-options='{ "wrapAround": true }'
 						>
@@ -565,7 +520,8 @@
 								class="apprentissage__activite accordion-body lh-1.5"
 							>
 								<strong class="activite__title fs-5"
-									>CyberSecurity Challenge</strong
+									>CyberSecurity Challenge Belgium (CSCBE
+									2021)</strong
 								><br /><br />
 								<div class="activite__heure">
 									<span class="fw-bold"
@@ -599,48 +555,7 @@
 									</p>
 								</div>
 								<div class="activite__preuve">
-									<span>preuve</span>
-								</div>
-								<div class="activite__apport"></div>
-							</div>
-							<div
-								class="apprentissage__activite accordion-body lh-1.5"
-							>
-								<strong class="activite__title fs-5"
-									>Hackathon EPHEC</strong
-								><br /><br />
-								<div class="activite__heure">
-									<span class="fw-bold"
-										>Nombre d'heure presté</span
-									>
-									<span>48h</span>
-								</div>
-								<br />
-								<div class="activite__heure">
-									<span class="fw-bold"
-										>Nombre d'heure Valorisé</span
-									>
-									<span>48h</span>
-								</div>
-								<br />
-
-								<div
-									class="activite__description text-xl-start"
-								>
-									<p class="fw-bold">Description</p>
-									<p>
-										L'institut de management et de
-										l''entrepreunariat où durant cette année
-										j'ai pu acquerir de solide bases dans le
-										domaine du génie informatique. <br />
-										<br />
-										Ces Fondametaux ont pu être complété par
-										la réalisation d'un mini-projet qui a
-										constitué à la réalisation d'un
-										mini-site web
-									</p>
-								</div>
-								<div class="activite__preuve">
+									<!-- ON CLICK SUR LA PREUVE AFFICHER LES PREUVES COMME UN POPUP ET LES METTRE EN CAROUSEL -->
 									<span>preuve</span>
 								</div>
 								<div class="activite__apport"></div>
@@ -682,54 +597,47 @@
 				<div class="accordion" id="accordionExample">
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingOne">
-							<button
-								class="accordion-button"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseOne"
-								aria-expanded="true"
-								aria-controls="collapseOne"
-							>
-								2018-2019
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
+								2022-2023
 							</button>
 						</h2>
-						<div
-							id="collapseOne"
-							class="accordion-collapse collapse show"
-							aria-labelledby="headingOne"
-							data-bs-parent="#accordionExample"
-						>
-							<div
-								class="description-formation accordion-body lh-1.5"
-							>
-								<strong class="title-formation"
-									>1ere Année Technologie de l'Informatique et
-									de la Communication à l'IME</strong
-								><br />
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample">
+							<div class="description-formation accordion-body">
+								<strong class="title-formation">3eme Année Bachelier en Technologie de
+									l'informatique-Haute Ecole EPHEC</strong><br />
 								<p>
-									L'institut de management et de
-									l''entrepreunariat où durant cette année
-									j'ai pu acquerir de solide bases dans le
-									domaine du génie informatique. <br />
-									<br />
-									Ces Fondametaux ont pu être complété par la
-									réalisation d'un mini-projet qui a constitué
-									à la réalisation d'un mini-site web
+									Année diplomante concluant sur un projet de fin d'étude qui consistait en la collaboration sur le développement d'une application de lange De Taaltoolbox fait en Angular et NodeJS
+									<!-- <a href="https://github.com/CardinPatson" target="_blank">ici</a>. -->
 								</p>
+								<strong class="title-formation">Stage de fin d'étude chez Nutrinomics</strong><br />
+								<p>
+									PME qui vient en aide au patient atteint de maladie chronique via une nutrition de qualité qui combine dernière recherche scientifique et intelligence artificielle.
+									<br>
+									Stack : 
+									<ul>
+										<li>Angular (Frontend)</li>
+										<li>Tsoa & MongoDB (Backend)</li>
+										<li>Python(Machine learning), AWS</li>
+									</ul> 
+									<!-- <a href="https://github.com/CardinPatson" target="_blank">ici</a>. -->
+								</p>
+									
 							</div>
 						</div>
 					</div>
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingTwo">
 							<button
-								class="accordion-button collapsed"
+								class="accordion-button"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#collapseTwo"
 								aria-expanded="false"
 								aria-controls="collapseTwo"
 							>
-								2019-2020
+								2021-2022
 							</button>
 						</h2>
 						<div
@@ -742,21 +650,14 @@
 								class="description-formation accordion-body lh-1.5"
 							>
 								<strong class="title-formation"
-									>Stage de formation en maintenance
-									informatique</strong
+									>2eme Année Technologie de l'Informatique et
+									de la Communication à l'IME</strong
 								><br />
 								<p>
-									Chez Mac consulting , une société
-									spécialisée dans la maintenance des
-									matériaux et des résaux informatique, J'ai
-									pu acquerir une expérience qui me permet de
-									voir à ce jour d'un autre oeil les résaux
-									TCP/IP
 								</p>
 							</div>
 						</div>
 					</div>
-
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingThree">
 							<button
@@ -793,11 +694,10 @@
 										>ici</a
 									>.
 								</p>
-
 								<p>
 									Les modules tels que programmation orienté
 									web , Résaux m'ont permis de comprendre
-									l'architecture du web à un niveau un peu
+									l'architecture du web à un niveau
 									plus pousser
 								</p>
 							</div>
@@ -813,7 +713,7 @@
 								aria-expanded="false"
 								aria-controls="collapseFour"
 							>
-								Compétences
+								2018-2020
 							</button>
 						</h2>
 						<div
@@ -822,12 +722,62 @@
 							aria-labelledby="headingFour"
 							data-bs-parent="#accordionExample"
 						>
+							<div class="description-formation accordion-body">
+								<p>
+									L'institut de management et de
+									l'entrepreunariat où durant cette année
+									j'ai pu acquerir de solide bases dans le
+									domaine du génie informatique.
+									<br />
+								</p>
+									
+									<strong class="title-formation">Stage de formation en maintenance
+										informatique</strong><br />
+										<p>
+									Ces Fondametaux ont pu être complété par la
+									Chez Mac consulting , une société
+									spécialisée dans la maintenance des
+									matériaux et des résaux informatique, J'ai
+									pu acquerir une expérience qui me permet de
+									voir à ce jour d'un autre oeil les résaux
+									TCP/IP
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseFive"
+								aria-expanded="false"
+								aria-controls="collapseFive"
+							>
+								Compétences
+							</button>
+						</h2>
+						<div
+							id="collapseFive"
+							class="accordion-collapse collapse"
+							aria-labelledby="headingFive"
+							data-bs-parent="#accordionExample"
+						>
 							<div class="description-experience accordion-body">
-								<span>Javascript</span>
+								<span>Angular</span>
 								<div class="barre">
 									<div
 										class="barre"
-										id="barre-javascript"
+										id="barre-angular"
+									></div>
+								</div>
+								<br />
+								<span>NodeJs/NestJS</span>
+								<div class="barre">
+									<div
+										class="barre"
+										id="barre-node"
 									></div>
 								</div>
 								<br />
@@ -836,16 +786,15 @@
 									<div class="barre" id="barre-react"></div>
 								</div>
 								<br />
-								<span>SQL</span>
+								<span>Python</span>
 								<div class="barre">
-									<div class="barre" id="barre-sql"></div>
+									<div class="barre" id="barre-python"></div>
 								</div>
 								<br /><br />
 								<p>
 									Maitrise des bibliothèques telles que
 									bootstrap
-									<i class="fab fa-bootstrap"></i> , jquery
-									<i class="ui-icon ui-icon-jquery"></i> , et
+									<i class="fab fa-bootstrap"></i>, et
 									du préprocesseur sass
 									<i class="fab fa-sass"></i>
 								</p>

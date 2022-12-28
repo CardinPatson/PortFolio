@@ -24,7 +24,11 @@
 			border-radius: 2.4rem;
 			height: 16px;
 			width: 100%;
-			#barre-javascript {
+			#barre-angular {
+				background-color: $secondary;
+				width: 90%;
+			}
+			#barre-node {
 				background-color: $secondary;
 				width: 80%;
 			}
@@ -32,7 +36,7 @@
 				background-color: $secondary;
 				width: 50%;
 			}
-			#barre-sql {
+			#barre-python {
 				background-color: $secondary;
 				width: 60%;
 			}

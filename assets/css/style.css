@@ -11156,7 +11156,8 @@ img {
     padding-bottom: 10px;
   }
   .project__title {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    border: solid red 1px;
   }
 }
 .projets {
@@ -11229,7 +11230,11 @@ img {
   height: 16px;
   width: 100%;
 }
-#formation .description-experience .barre #barre-javascript {
+#formation .description-experience .barre #barre-angular {
+  background-color: #4ca4f0;
+  width: 90%;
+}
+#formation .description-experience .barre #barre-node {
   background-color: #4ca4f0;
   width: 80%;
 }
@@ -11237,7 +11242,7 @@ img {
   background-color: #4ca4f0;
   width: 50%;
 }
-#formation .description-experience .barre #barre-sql {
+#formation .description-experience .barre #barre-python {
   background-color: #4ca4f0;
   width: 60%;
 }
@@ -11356,6 +11361,7 @@ img {
   cursor: pointer;
 }
 .apprentissage__activite .activite__preuve:hover {
+  transition: all 0.3s ease-in;
   background-color: rgba(76, 164, 240, 0.5);
   border-color: #4ca4f0;
 }
