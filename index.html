@@ -447,7 +447,8 @@
 										mini-site web
 									</p>
 								</div>
-								<div class="activite__preuve">
+								<!-- <div class="activite__preuve" onclick="showProofImage(['odoo_one.jpg', 'odoo_two.jpg'])"> -->
+								<div class="activite__preuve" onclick="showProuf('hackathon__odoo')">
 									<span>preuve</span>
 								</div>
 								<div class="activite__apport"></div>
@@ -489,7 +490,7 @@
 										mini-site web
 									</p>
 								</div>
-								<div class="activite__preuve">
+								<div class="activite__preuve" onclick="showProuf('hackathon__ephec')">
 									<span>preuve</span>
 								</div>
 								<div class="activite__apport"></div>
@@ -554,7 +555,7 @@
 										mini-site web
 									</p>
 								</div>
-								<div class="activite__preuve">
+								<div class="activite__preuve" onclick="showProuf('cybersecurity__challenge__one')">
 									<!-- ON CLICK SUR LA PREUVE AFFICHER LES PREUVES COMME UN POPUP ET LES METTRE EN CAROUSEL -->
 									<span>preuve</span>
 								</div>
@@ -614,7 +615,7 @@
 								<strong class="title-formation">Stage de fin d'étude chez Nutrinomics</strong><br />
 								<p>
 									PME qui vient en aide au patient atteint de maladie chronique via une nutrition de qualité qui combine dernière recherche scientifique et intelligence artificielle.
-									<br>
+									<br />
 									Stack : 
 									<ul>
 										<li>Angular (Frontend)</li>
@@ -857,7 +858,45 @@
 				</div>
 			</div>
 		</section>
-
+		<div id="wrapper__popup"  style="display : none">
+			<div id="carouselExampleControls" class="activite__proof__popup carousel slide" data-ride="carousel" >
+				<div
+				class="activite__proof__image carousel-inner hackathon__odoo"
+				style="display :none"
+				data-flickity='{ "wrapAround": true }'
+				>
+					<div class="activite__popup__closer" onclick="closeProof()"></div>
+					<div class="carousel__cell__image" style='position:absolute; left:0px'>
+						<!-- <div class=" carousel-item"> -->
+							<img class="d-block w-100" src='img/preuve/odoo_one.jpg' alt='image proof' />
+							<!-- </div> -->
+						</div>
+						<div class="carousel__cell__image" style='position:absolute; left:0px'>
+							<!-- <div class=" carousel-item"> -->
+								<img class="d-block w-100" src='img/preuve/odoo_two.jpg' alt='image proof' />
+								<!-- </div> -->
+							</div>
+						</div>
+						<div
+						class="activite__proof__image carousel-inner hackathon__ephec"
+						style="display :none"
+						data-flickity='{ "wrapAround": true }'
+						>
+						<div class="activite__popup__closer" onclick="closeProof()"></div>
+						<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/odoo_one.jpg' alt='image proof' /></div>
+						<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/odoo_one.jpg' alt='image proof' /></div>
+				</div>
+				<div
+				class="activite__proof__image carousel cybersecurity__challenge__one"
+					style="display :none"
+					data-flickity='{ "wrapAround": true }'
+					>
+					<div class="activite__popup__closer" onclick="closeProof()"></div>
+					<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/classement_cyber_security_challenge.jpg' alt='image proof' /></div>
+					<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/equipe_cybersecurity_2022.jpg' alt='image proof' /></div>
+				</div>
+			</div>
+		</div>
 		<script src="assets/vendors/js/glightbox.min.js"></script>
 		<script>
 			//REPRESENTE LES PARAMETRES DAFFICHAGE DE NOTRE VIDEO
