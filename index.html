@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="assets/css/fontawesome.css" />
 		<link rel="stylesheet" href="assets/vendors/css/glightbox.css" />
 		<link rel="stylesheet" href="assets/css/flickity.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="assets/js/flickity.pkgd.min.js"></script>
 		<title>Portfolio</title>
 		<script>
@@ -55,29 +56,36 @@
 					id="navbarNavAltMarkup"
 				>
 					<div class="navbar-nav">
-						<a
-							class="nav-link"
-							href="https://github.com/CardinPatson"
-							target="_blank"
-							>Profil <i class="fab fa-github"></i
-						></a>
-						<a class="nav-link" href="#projet"
+
+						<a class="nav-link" href="#project"
 							>Projets <i class="fas fa-palette"></i
+						></a>
+						<a class="nav-link" href="#apprentissage"
+							>Acquis <i class="fas fa-palette"></i
 						></a>
 						<a class="nav-link" href="#formation"
 							>Formations<i class="fas fa-user-graduate"></i
 						></a>
+						<a class="nav-link" href="./cv.html"
+							>CV<i class="fas fa-docs"></i
+						></a>
 						<a class="nav-link" href="#contact">Contact </a>
-						<a href="tel:(32)465726242"
+						<a
+							class="nav-link"
+							href="https://github.com/CardinPatson"
+							target="_blank"
+							><i class="fab fa-github"></i
+						></a>
+						<!-- <a href="tel:(32)465726242"
 							><button
 								type="button"
 								class="rounded-pill btn-rounded"
 							>
-								+32 465726242
+								call
 								<span
 									><i class="fas fa-phone-alt"></i
 								></span></button
-						></a>
+						></a> -->
 
 						<!-- <a
               class="nav-link disabled"
@@ -142,7 +150,9 @@
 		<section id="projets" class="projets">
 			<div class="container">
 				<div class="row text-center">
-					<h1 class="display-4 fw-bold">Projets Personnels et contribution</h1>
+					<a id="project">
+						<h1 class="display-4 fw-bold">Projets Personnels et contribution</h1>
+					</a>
 					<div class="heading-line mb-1"></div>
 					<!-- mb-1 est la distance entre le lelement et le contenu en bas-->
 				</div>
@@ -400,7 +410,7 @@
 								aria-expanded="true"
 								aria-controls="apprentissageOne"
 							>
-								Hackaton
+								Hackaton (20h)
 							</button>
 						</h2>
 						<div
@@ -427,7 +437,7 @@
 									<span class="fw-bold"
 										>Nombre d'heure Valorisé</span
 									>
-									<span>48h</span>
+									<span>10h</span>
 								</div>
 								<br />
 
@@ -436,21 +446,17 @@
 								>
 									<p class="fw-bold">Description</p>
 									<p>
-										L'institut de management et de
-										l''entrepreunariat où durant cette année
-										j'ai pu acquerir de solide bases dans le
-										domaine du génie informatique. <br />
+										Durrant ce Hackathon on a du réaliser une plateforme destinée à aider les étudiants à mieux suivre leur progression. <br />
 										<br />
-										Ces Fondametaux ont pu être complété par
-										la réalisation d'un mini-projet qui a
-										constitué à la réalisation d'un
-										mini-site web
+										Comme tout hackathon fun, boulot, peu de sommeil..
 									</p>
 								</div>
-								<!-- <div class="activite__preuve" onclick="showProofImage(['odoo_one.jpg', 'odoo_two.jpg'])"> -->
-								<div class="activite__preuve" onclick="showProuf('hackathon__odoo')">
-									<span>preuve</span>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterHackathonOdoo">
+										Voir
+									</button>
 								</div>
+									
 								<div class="activite__apport"></div>
 							</div>
 							<div
@@ -470,7 +476,7 @@
 									<span class="fw-bold"
 										>Nombre d'heure Valorisé</span
 									>
-									<span>48h</span>
+									<span>10h</span>
 								</div>
 								<br />
 
@@ -479,20 +485,17 @@
 								>
 									<p class="fw-bold">Description</p>
 									<p>
-										L'institut de management et de
-										l''entrepreunariat où durant cette année
-										j'ai pu acquerir de solide bases dans le
-										domaine du génie informatique. <br />
+										Comme tout hackathon se doit de l'être, travailler archarné peu de sommeil, beaucoup de fun et surtout de la nourriture gratos. <br />
 										<br />
-										Ces Fondametaux ont pu être complété par
-										la réalisation d'un mini-projet qui a
-										constitué à la réalisation d'un
-										mini-site web
+										Le thème portait sur le developpement durable, on a su terminer 3eme avec une plateforme de recyclage des vieux matos de l'Ephec 😶 
 									</p>
 								</div>
-								<div class="activite__preuve" onclick="showProuf('hackathon__ephec')">
-									<span>preuve</span>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterHackathonEphec">
+										Voir
+									</button>
 								</div>
+
 								<div class="activite__apport"></div>
 							</div>
 						</div>
@@ -507,7 +510,7 @@
 								aria-expanded="true"
 								aria-controls="apprentissageTwo"
 							>
-								Cybersecurity
+								Cybersecurity (10h)
 							</button>
 						</h2>
 						<div
@@ -535,7 +538,165 @@
 									<span class="fw-bold"
 										>Nombre d'heure Valorisé</span
 									>
-									<span>48h</span>
+									<span>10h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										Qui dit sécurité dit casse tête chinois pour ma part (j'adore le casse tête chinois). <br />
+										<br />
+										Ce fut un bon moment plein de joie et de désespoir à la fois Je vous le recommande en équipe le CSCBE est unique.
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterCSCBE">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="acquisThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#apprentissageThree"
+								aria-expanded="true"
+								aria-controls="apprentissageThree"
+							>
+								Capture The Flag (10h)
+							</button>
+						</h2>
+						<div
+							id="apprentissageThree"
+							class="accordion-collapse collapse show gallery js-flickity remove__show"
+							aria-labelledby="acquisThree"
+							data-bs-parent="#accordionExample"
+							data-flickity-options='{ "wrapAround": true }'
+						>
+							<div
+								class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>CTEphec</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>12h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>10h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										J'ai découvert qu'on pouvait faire un capture de flag sur n'importe quel cours à l'Ephec. <br />
+										<br />
+										Il manquait juste le cours d'anglais😁
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterCTEphec">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="acquisFour">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#apprentissageFour"
+								aria-expanded="true"
+								aria-controls="apprentissageFour"
+							>
+								Conférence et représentation Ephec (18h)
+							</button>
+						</h2>
+						<div
+							id="apprentissageFour"
+							class="accordion-collapse collapse show gallery js-flickity remove__show"
+							aria-labelledby="acquisFour"
+							data-bs-parent="#accordionExample"
+							data-flickity-options='{ "wrapAround": true }'
+						>
+							<div
+								class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>Dev Day 2021</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>6h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>6h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										6h de conférence portant sur des thèmes vraiment magnifique (Devops, Mobile..) <br />
+										<br />
+										Dommage qu'on ne pouvait pas se diviser en plusieurs pour assister à deux conférences à la même heure.
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterDevDay">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+							<div
+								class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>Salon SIEP</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>8h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>8h</span>
 								</div>
 								<br />
 
@@ -563,7 +724,173 @@
 							</div>
 						</div>
 					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="acquisFive">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#apprentissageFive"
+								aria-expanded="true"
+								aria-controls="apprentissageFive"
+							>
+								Formation en ligne (10h)
+							</button>
+						</h2>
+						<div
+							id="apprentissageFive"
+							class="accordion-collapse collapse show gallery js-flickity remove__show"
+							aria-labelledby="acquisFive"
+							data-bs-parent="#accordionExample"
+							data-flickity-options='{ "wrapAround": true }'
+						>
+							<div
+							class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>Technofutur</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>48h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>10h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										<br />
+										Formation sur les aspects necessaire depuis le démarrage d'un nouveau site jusque sa mise en production.
+										<br />
+										
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterTechnofutur">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+							<div
+								class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>Openclassroom</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>48h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>48h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										Mes débuts dans le javascript. <br />
+										<br />
+										On commence tous à un moment par Openclassroom...                       
+										<span>                                                   </span>
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterOpenclassroom">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="acquisSix">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#apprentissageSix"
+								aria-expanded="true"
+								aria-controls="apprentissageSix"
+							>
+								Job Etudiant (10h)
+							</button>
+						</h2>
+						<div
+							id="apprentissageSix"
+							class="accordion-collapse collapse show gallery js-flickity remove__show"
+							aria-labelledby="acquisSix"
+							data-bs-parent="#accordionExample"
+							data-flickity-options='{ "wrapAround": true }'
+						>
+							<div
+								class="apprentissage__activite accordion-body lh-1.5"
+							>
+								<strong class="activite__title fs-5"
+									>Sketcher</strong
+								><br /><br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure presté</span
+									>
+									<span>48h</span>
+								</div>
+								<br />
+								<div class="activite__heure">
+									<span class="fw-bold"
+										>Nombre d'heure Valorisé</span
+									>
+									<span>48h</span>
+								</div>
+								<br />
+
+								<div
+									class="activite__description text-xl-start"
+								>
+									<p class="fw-bold">Description</p>
+									<p>
+										<br />
+										Ces Fondametaux ont pu être complété par
+										la réalisation d'un mini-projet qui a
+										constitué à la réalisation d'un
+										mini-site web
+									</p>
+								</div>
+								<div style="display: flex; justify-content: end;">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterJob">
+										Voir
+									</button>
+								</div>
+								<div class="activite__apport"></div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterRecap">
+					Récapitulatif
+				</button>
 			</div>
 			<!-- Losqu'on clique sur les thèmes, Dérouler le carroussel des activités ou on peut scroller -->
 			<!-- construction des themes -->
@@ -848,7 +1175,7 @@
 						>
 							<i class="fab fa-google"></i> </a
 						><a
-							href="https://www.linkedin.com/in/tiako-ngouadje-036489186/"
+							href="https://www.linkedin.com/in/cardin-tiako-036489186/"
 							class="icon-button linkedin"
 							target="_blank"
 						>
@@ -858,44 +1185,7 @@
 				</div>
 			</div>
 		</section>
-		<div id="wrapper__popup"  style="display : none">
-			<div id="carouselExampleControls" class="activite__proof__popup carousel slide" data-ride="carousel" >
-				<div
-				class="activite__proof__image carousel-inner hackathon__odoo"
-				style="display :none"
-				data-flickity='{ "wrapAround": true }'
-				>
-					<div class="activite__popup__closer" onclick="closeProof()"></div>
-					<div class="carousel__cell__image" style='position:absolute; left:0px'>
-						<!-- <div class=" carousel-item"> -->
-							<img class="d-block w-100" src='img/preuve/odoo_one.jpg' alt='image proof' />
-							<!-- </div> -->
-						</div>
-						<div class="carousel__cell__image" style='position:absolute; left:0px'>
-							<!-- <div class=" carousel-item"> -->
-								<img class="d-block w-100" src='img/preuve/odoo_two.jpg' alt='image proof' />
-								<!-- </div> -->
-							</div>
-						</div>
-						<div
-						class="activite__proof__image carousel-inner hackathon__ephec"
-						style="display :none"
-						data-flickity='{ "wrapAround": true }'
-						>
-						<div class="activite__popup__closer" onclick="closeProof()"></div>
-						<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/odoo_one.jpg' alt='image proof' /></div>
-						<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/odoo_one.jpg' alt='image proof' /></div>
-				</div>
-				<div
-				class="activite__proof__image carousel cybersecurity__challenge__one"
-					style="display :none"
-					data-flickity='{ "wrapAround": true }'
-					>
-					<div class="activite__popup__closer" onclick="closeProof()"></div>
-					<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/classement_cyber_security_challenge.jpg' alt='image proof' /></div>
-					<div class="carousel__cell__image" style='position:absolute; left:0px'><img src='img/preuve/equipe_cybersecurity_2022.jpg' alt='image proof' /></div>
-				</div>
-			</div>
+
 		</div>
 		<script src="assets/vendors/js/glightbox.min.js"></script>
 		<script>
@@ -907,10 +1197,243 @@
 				width: 900,
 				autoplayVideos: true,
 			});
+			const lightbox2 = GLightbox({
+				href: "https://www.youtube.com/watch?v=5FVZ3nIqWD8",
+				type: "video",
+				source: "youtube", //vimeo, youtube or local
+				width: 900,
+				autoplayVideos: true,
+			});
 		</script>
 		<script src="assets/js/bootstrap.bundle.js"></script>
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="js/index.js"></script>
 		<!-- <script src="js/index.js"></script> -->
 	</body>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterHackathonOdoo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body" style="display: flex;">
+				<div class="" >
+					<img class="d-block w-100" src='img/preuve/odoo_one.jpg' alt='image proof' />
+				</div>
+				<div class="">
+						<img class="d-block w-100" src='img/preuve/odoo_two.jpg' alt='image proof' />
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade" id="exampleModalCenterHackathonEphec" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			<!-- <div style="display: flex;"> -->
+				<div class="" >
+					<img class="d-block w-100" src='img/preuve/Hack_ephec/hack_presentation.png' alt='image proof' />
+				</div>
+				<div class="">
+						<img class="d-block w-100" src='img/preuve/Hack_ephec/hack_game.png' alt='image proof' />
+				</div>
+			<!-- </div> -->
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterCSCBE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div style="display: flex;">
+					<div>
+						<div class="carousel__cell__image" >
+							<img class="d-block w-100" src='img/preuve/classement_cyber_security_challenge.png' alt='image proof' />
+						</div>
+						<div class="carousel__cell__image">
+							<img class="d-block w-100" src='img/preuve/equipe_cybersecurity_2022.jpg' alt='image proof' />
+						</div>
+						<div class="carousel__cell__image">
+							<img class="d-block w-100" src='img/preuve/equipe_discord.png' alt='image proof' />
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterDevDay" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div style="display: flex;">
+						<div class="carousel__cell__image" >
+							<img class="d-block w-100" src='img/preuve/dev_day/devday_rach_aymar.jpg' alt='image proof' />
+						</div>
+						<div class="carousel__cell__image">
+							<img class="d-block w-100" src='img/preuve/dev_day/dev_day_team.jpg' alt='image proof' />
+						</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterOpenclassroom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- <div style="display: flex;"> -->
+						<div class="carousel__cell__image" >
+							<img class="d-block w-100" src='img/preuve/openclassroom/Tableau_Bord.JPG' alt='image proof' />
+						</div>
+						<div class="carousel__cell__image">
+							<img class="d-block w-100" src='img/preuve/openclassroom/Formation_OpenClassRoom.JPG' alt='image proof' />
+						</div>
+				<!-- </div> -->
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterTechnofutur" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- <div style="display: flex;"> -->
+						<div class="carousel__cell__image" >
+							<img class="d-block w-100" src='img/preuve/technofutur/technofutur.png' alt='image proof' />
+						</div>
+				<!-- </div> -->
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterCTEphec" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div style="display: flex;">
+					<div class="carousel__cell__image" >
+						<img class="d-block w-100" src='img/preuve/ctf/ctephec.png' alt='image proof' />
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalCenterJob" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<div class="carousel__cell__image" >
+						<img class="d-block w-100" src='img/preuve/job/fiche_paie.png' alt='image proof' />
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="modal bd-example-modal-lg" id="exampleModalCenterRecap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<!-- <div style="display: flex;">
+					<div class="carousel__cell__image" >
+						<img class="d-block w-100" src='img/preuve/ctf/ctephec.png' alt='image proof' />
+					</div>
+				</div> -->
+				<table class="table table-hover">
+					<thead>
+					  <tr>
+						<th scope="col">Theme</th>
+						<th scope="col">Activité</th>
+						<th scope="col">Heure presté </th>
+						<th scope="col">Heure valorisé</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr class="table-primary center">
+						<th scope="row">Hackathon</th>
+						<td>Hackthon ODOO <br> Hackathon Ephec </td>
+						<td>96</td>
+						<td>20</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Conférence</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Job Etudiant</th>
+						<td>Sketcher</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Ephec Entreprendre</th>
+						<td>Sketcher</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
+		  </div>
+		</div>
+	</div>
+			
 </html>
