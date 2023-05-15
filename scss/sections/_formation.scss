@@ -30,7 +30,11 @@
 			}
 			#barre-node {
 				background-color: $secondary;
-				width: 80%;
+				width: 90%;
+			}
+			#barre-docker {
+				background-color: $secondary;
+				width: 70%;
 			}
 			#barre-react {
 				background-color: $secondary;
@@ -39,6 +43,10 @@
 			#barre-python {
 				background-color: $secondary;
 				width: 60%;
+			}
+			#barre-linux {
+				background-color: $secondary;
+				width: 100%;
 			}
 		}
 		p {

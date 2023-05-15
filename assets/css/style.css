@@ -11235,7 +11235,11 @@ img {
 }
 #formation .description-experience .barre #barre-node {
   background-color: #4ca4f0;
-  width: 80%;
+  width: 90%;
+}
+#formation .description-experience .barre #barre-docker {
+  background-color: #4ca4f0;
+  width: 70%;
 }
 #formation .description-experience .barre #barre-react {
   background-color: #4ca4f0;
@@ -11244,6 +11248,10 @@ img {
 #formation .description-experience .barre #barre-python {
   background-color: #4ca4f0;
   width: 60%;
+}
+#formation .description-experience .barre #barre-linux {
+  background-color: #4ca4f0;
+  width: 100%;
 }
 #formation .description-experience p {
   padding: 15px;
